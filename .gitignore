@@ -44,6 +44,8 @@ reports/summary/
 
 # === Auto-generated reports (already published to S3 or other systems) ===
 !reports/senales_heuristicas/exploracion/*.csv
+!reports/senales_heuristicas/diarias/top50_oportunidades_*.csv
+reports/senales_heuristicas/diarias/*_senales_diarias.csv
 *.html
 *.xlsx
 
