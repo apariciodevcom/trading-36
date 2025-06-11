@@ -58,3 +58,5 @@ config/test.json
 .trash/
 .vscode/
 .idea/
+
+!trading_agents/agent1/**
