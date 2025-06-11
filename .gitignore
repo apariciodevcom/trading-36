@@ -1,0 +1,58 @@
+# =============================================================================
+# .gitignore for trading-36 (production branch)
+# =============================================================================
+# Prevents sensitive, temporary, or heavy files from being committed.
+# Keeps version control focused on production-ready logic and scripts only.
+# =============================================================================
+
+# === Environment files and local secrets ===
+.env
+.keys.sh
+.trading.env
+
+# === Python cache and build artifacts ===
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+*.pkl
+*.h5
+*.npy
+*.tmp
+*.bak
+
+# === Raw data and generated feature sets ===
+data/
+modelos/ml/tmp/
+
+# === Execution logs and runtime traces ===
+logs/
+*.log
+
+# === Notebooks and experimental code ===
+notebooks/
+*.ipynb
+.ipynb_checkpoints/
+
+# === Debug and non-production reports ===
+reports/backtest_*
+reports/debug/
+reports/logs/
+reports/ordenes_enriquecidas/
+reports/senales_ml/
+reports/summary/
+
+# === Auto-generated reports (already published to S3 or other systems) ===
+*.csv
+*.html
+*.xlsx
+
+# === Test configurations and non-production metadata ===
+config/*test.json
+config/error.json
+config/test.json
+
+# === IDE/editor/backup files ===
+.trash/
+.vscode/
+.idea/

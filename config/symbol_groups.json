@@ -1,0 +1,12 @@
+{
+  "grupo_1": ["AAPL", "TSLA", "AMD", "NVDA", "SMCI"],
+  "grupo_2": ["MSFT", "GOOGL", "AMZN", "INTC", "AVGO"],
+  "grupo_3": ["WMT", "XOM", "BAC", "F", "PFE"],
+  "grupo_4": ["NIO", "BABA", "HIMS", "PLTR", "SKX"],
+  "grupo_5": ["HOOD", "UBER", "WFC", "MRK", "TSM"],
+  "grupo_6": ["JPM", "V", "CRM", "LLY", "TMO"],
+  "grupo_7": ["CTVA", "RPRX", "HBANL", "SOJC", "FITBO"],
+  "grupo_8": ["KHC", "TBB", "ED", "DGX", "EQCF"],
+  "grupo_9": ["EQR", "EXE", "FWONA", "HBANM", "HBANP"],
+  "grupo_10": ["MCHPP", "META", "NKE", "ORCL", "DEL"]
+}

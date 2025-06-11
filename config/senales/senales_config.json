@@ -1,0 +1,34 @@
+{
+    "usar_fecha_manual": false,
+    "fecha_manual": "2025-05-21",
+    "aplicar_a": "todos",
+    "lista_simbolos": [
+        "AAPL",
+        "MSFT",
+        "TSLA"
+    ],
+    "stop_loss_default": 0.03,
+    "take_profit_default": 0.06,
+    "sl_tp_por_simbolo": {
+        "AAPL": {
+            "sl": 0.02,
+            "tp": 0.05
+        },
+        "MSFT": {
+            "sl": 0.025,
+            "tp": 0.045
+        }
+    },
+    "estrategias": [
+        {
+            "nombre": "rango_cierre_40",
+            "condicion": "close < low + (high - low) * 0.4",
+            "tipo_senal": "buy"
+        },
+        {
+            "nombre": "rango_cierre_80",
+            "condicion": "close < low + (high - low) * 0.8",
+            "tipo_senal": "buy"
+        }
+    ]
+}

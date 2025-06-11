@@ -1,0 +1,58 @@
+{
+  "validation": {
+    "fecha": "2025-05-25",
+    "ultima_ejecucion": "2025-05-25 16:27:29",
+    "status": "OK"
+  },
+  "features": {
+    "fecha": "2025-05-25",
+    "ultima_ejecucion": "2025-05-25 00:15:29",
+    "status": "OK",
+    "mensaje": "Proceso completado"
+  },
+  "senales": {
+    "fecha": "2025-05-22",
+    "ultima_ejecucion": "2025-05-22 11:40:01",
+    "status": "ERROR",
+    "mensaje": "No se generaron predicciones"
+  },
+  "senales_heuristicas": {
+    "fecha": "2025-06-01",
+    "status": "ERROR",
+    "mensaje": "48 de 50 procesados correctamente"
+  },
+  "train_model": {
+    "fecha": "2025-05-24",
+    "ultima_ejecucion": "2025-05-24 16:24:16",
+    "status": "ERROR",
+    "mensaje": "Fallo: No se encontraron datos con la columna 'senal'"
+  },
+  "backup": {
+    "fecha": "2025-05-24",
+    "ultima_ejecucion": "2025-05-24 16:41:01",
+    "status": "ERROR",
+    "mensaje": "Fallo local: [Errno 28] No space left on device"
+  },
+  "ingestion": {
+    "fecha": "2025-05-25",
+    "ultima_ejecucion": "2025-05-25 15:12:38",
+    "status": "OK",
+    "mensaje": "673/675 simbolos procesados correctamente (99.7%)"
+  },
+  "backtest_heuristico": {
+    "fecha": "2025-05-26",
+    "ultima_ejecucion": "2025-05-26 15:43:42",
+    "status": "OK",
+    "mensaje": "Proceso completado exitosamente"
+  },
+  "senales_heuristicas_diarias": {
+    "fecha": "2025-06-11",
+    "status": "ERROR",
+    "mensaje": "48 de 50 procesados"
+  },
+  "top50_heuristicas": {
+    "fecha": "2025-06-11",
+    "status": "OK",
+    "mensaje": "9 oportunidades generadas"
+  }
+}

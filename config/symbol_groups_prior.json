@@ -1,0 +1,20 @@
+{
+  "grupo_1": [
+    "AAPL",
+    "AMD",
+    "NVDA",
+    "SMCI",
+    "TSLA",
+    "AMZN",
+    "AVGO"
+  ],
+  "grupo_2": [
+    "BAC",
+    "GOOGL",
+    "INTC",
+    "MSFT",
+    "XOM",
+    "CRM",
+    "DELL"
+  ]
+}
