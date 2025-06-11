@@ -1,16 +1,16 @@
 # =============================================================================
-# .gitignore for trading-36 (production branch)
+# .gitignore for trading-36 (production and exploration branches)
 # =============================================================================
-# Prevents sensitive, temporary, or heavy files from being committed.
-# Keeps version control focused on production-ready logic and scripts only.
+# Prevents sensitive, temporary, experimental, or heavy files from being tracked.
+# Keeps version control focused on production-ready logic, scripts, reports, and configs.
 # =============================================================================
 
-# === Environment files and local secrets ===
+# === Environment and secrets ===
 .env
 .keys.sh
 .trading.env
 
-# === Python cache and build artifacts ===
+# === Python cache and compiled artifacts ===
 __pycache__/
 *.py[cod]
 *.so
@@ -21,42 +21,52 @@ __pycache__/
 *.tmp
 *.bak
 
-# === Raw data and generated feature sets ===
+# === Raw data and derived datasets ===
 data/
 modelos/ml/tmp/
 
-# === Execution logs and runtime traces ===
+# === Logs and runtime artifacts ===
 logs/
 *.log
 
-# === Notebooks and experimental code ===
-notebooks/
+# === Notebooks ===
+# Ignore all notebooks by default
+notebooks/*
+# Allow only production notebooks to be tracked
+!notebooks/production/
+!notebooks/production/**
+# Explicitly ignore exploration notebooks
+notebooks/exploration/
+notebooks/exploration/**
+
+# Ignore checkpoint and auto-backup files
 *.ipynb
 .ipynb_checkpoints/
 
-# === Debug and non-production reports ===
-reports/backtest_*
+# === Reports ===
+# Ignore debug, non-prod, and auto-generated files
+reports/backtest_*/
 reports/debug/
 reports/logs/
 reports/ordenes_enriquecidas/
 reports/senales_ml/
 reports/summary/
-
-# === Auto-generated reports (already published to S3 or other systems) ===
-!reports/senales_heuristicas/exploracion/*.csv
-!reports/senales_heuristicas/diarias/top50_oportunidades_*.csv
-reports/senales_heuristicas/diarias/*_senales_diarias.csv
 *.html
 *.xlsx
 
-# === Test configurations and non-production metadata ===
+# Allow only select published heuristics reports
+!reports/senales_heuristicas/exploracion/*.csv
+!reports/senales_heuristicas/diarias/top50_oportunidades_*.csv
+reports/senales_heuristicas/diarias/*_senales_diarias.csv
+
+# === Config files ===
 config/*test.json
 config/error.json
-config/test.json
 
-# === IDE/editor/backup files ===
+# === IDE/editor/workspace files ===
 .trash/
 .vscode/
 .idea/
 
+# === Exceptions for tracked agent logic ===
 !trading_agents/agent1/**
