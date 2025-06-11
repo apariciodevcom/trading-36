@@ -8,7 +8,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 # === Configuración general ===
-BASE_DIR = Path("/home/ubuntu/tr/reports/ordenes/agent1")
+BASE_DIR = Path("/home/ubuntu/tr/trading_agents/agent1")
 TOP50_PATH = Path(f"/home/ubuntu/tr/reports/senales_heuristicas/exploracion/top50_oportunidades_{datetime.now().strftime('%Y-%m-%d')}.csv")
 ORDENES_PATH = BASE_DIR / "ordenes.csv"
 POSICIONES_PATH = BASE_DIR / "posiciones_abiertas.json"

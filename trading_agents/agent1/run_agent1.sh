@@ -12,7 +12,7 @@ echo "===== START [$DATE_NOW] =====" >> $LOG_FILE
 source /home/ubuntu/tr/.keys.sh >> $LOG_FILE 2>&1
 
 # Ejecutar el agente
-python3 /home/ubuntu/tr/scripts/utils/agent1.py >> $LOG_FILE 2>&1
+python3 /home/ubuntu/tr/scripts/trading_agents/agent1/agent1.py >> $LOG_FILE 2>&1
 
 if [ $? -eq 0 ]; then
     echo "[$DATE_NOW] agent1.py completed successfully." >> $LOG_FILE
