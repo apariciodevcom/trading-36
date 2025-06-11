@@ -8,7 +8,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 # === Configuración general ===
-BASE_DIR = Path("/home/ubuntu/tr/reports/ordenes/agent1")
+BASE_DIR = Path("/home/ubuntu/tr/trading_agents/agent1")
 TOP50_PATH = Path(f"/home/ubuntu/tr/reports/senales_heuristicas/exploracion/top50_oportunidades_{datetime.now().strftime('%Y-%m-%d')}.csv")
 ORDENES_PATH = BASE_DIR / "ordenes.csv"
 POSICIONES_PATH = BASE_DIR / "posiciones_abiertas.json"
@@ -165,6 +165,9 @@ def main():
     df_estado = pd.concat([df_estado, nueva_fila_estado], ignore_index=True)
     df_estado.to_csv(ESTADO_PATH, index=False)
 
+    print(f"[INFO] Guardando en: {ORDENES_PATH}")
+    print(f"[INFO] Estado cuenta en: {ESTADO_PATH}")
+    print(f"[INFO] Posiciones: {POSICIONES_PATH}")
     print("[OK] agent1 completed")
 
 if __name__ == "__main__":
