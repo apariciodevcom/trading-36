@@ -43,7 +43,7 @@ reports/senales_ml/
 reports/summary/
 
 # === Auto-generated reports (already published to S3 or other systems) ===
-+ !reports/senales_heuristicas/diarias/*.csv
+!reports/senales_heuristicas/diarias/*.csv
 *.html
 *.xlsx
 
